@@ -60,3 +60,13 @@ Problem modules should load fixed inputs with `include_str!()` so `cargo test` a
 | 8 | Largest Product in a Series | solved | Embeds the 1000-digit series and scans fixed windows. |
 | 9 | Special Pythagorean Triplet | solved | Searches ordered triples for the target sum. |
 | 10 | Summation of Primes | solved | Sieve of Eratosthenes below two million. |
+| 11 | Largest Product in a Grid | solved | Parses the grid and scans four directions. |
+| 12 | Highly Divisible Triangular Number | solved | Uses divisor counts from prime factorization. |
+| 13 | Large Sum | solved | Uses decimal-vector addition for 50-digit values. |
+| 14 | Longest Collatz Sequence | solved | Memoizes Collatz chain lengths. |
+| 15 | Lattice Paths | solved | Computes the central binomial coefficient. |
+| 16 | Power Digit Sum | solved | Uses decimal-vector multiplication. |
+| 17 | Number Letter Counts | solved | Counts British-usage number words without spaces or hyphens. |
+| 18 | Maximum Path Sum I | solved | Bottom-up dynamic programming over the triangle. |
+| 19 | Counting Sundays | solved | Simulates month starts using Gregorian leap-year rules. |
+| 20 | Factorial Digit Sum | solved | Reuses decimal-vector multiplication. |
