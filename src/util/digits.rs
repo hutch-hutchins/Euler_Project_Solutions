@@ -74,6 +74,16 @@ pub fn is_pandigital_1_to_9(value: &str) -> bool {
     true
 }
 
+pub fn digit_signature(n: u64) -> [u8; 10] {
+    let mut signature = [0; 10];
+
+    for digit in decimal_digits(n) {
+        signature[digit as usize] += 1;
+    }
+
+    signature
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -112,5 +122,11 @@ mod tests {
         assert!(is_pandigital_1_to_9("123456789"));
         assert!(!is_pandigital_1_to_9("123456788"));
         assert!(!is_pandigital_1_to_9("012345678"));
+    }
+
+    #[test]
+    fn builds_digit_signature() {
+        assert_eq!(digit_signature(1487), digit_signature(8147));
+        assert_ne!(digit_signature(1487), digit_signature(1488));
     }
 }

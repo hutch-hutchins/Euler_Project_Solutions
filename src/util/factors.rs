@@ -72,6 +72,20 @@ pub fn proper_divisor_sums_through(limit: usize) -> Vec<u64> {
     sums
 }
 
+pub fn distinct_prime_factor_counts_through(limit: usize) -> Vec<usize> {
+    let mut counts = vec![0; limit + 1];
+
+    for n in 2..=limit {
+        if counts[n] == 0 {
+            for multiple in (n..=limit).step_by(n) {
+                counts[multiple] += 1;
+            }
+        }
+    }
+
+    counts
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -96,5 +110,13 @@ mod tests {
         assert_eq!(sums[1], 0);
         assert_eq!(sums[6], 6);
         assert_eq!(sums[10], 8);
+    }
+
+    #[test]
+    fn counts_distinct_prime_factors() {
+        let counts = distinct_prime_factor_counts_through(20);
+        assert_eq!(counts[14], 2);
+        assert_eq!(counts[15], 2);
+        assert_eq!(counts[16], 1);
     }
 }

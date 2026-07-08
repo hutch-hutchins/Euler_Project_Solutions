@@ -90,3 +90,13 @@ Problem modules should load fixed inputs with `include_str!()` so `cargo test` a
 | 38 | Pandigital Multiples | solved | Searches concatenated products for 1-9 pandigital values. |
 | 39 | Integer Right Triangles | solved | Counts Pythagorean triples by perimeter. |
 | 40 | Champernowne's Constant | solved | Computes requested sequence digits by index. |
+| 41 | Pandigital Prime | solved | Permutes pandigital digits and tests primality. |
+| 42 | Coded Triangle Numbers | solved | Uses `data/p0042_words.txt` and triangle-number tests. |
+| 43 | Sub-string Divisibility | solved | Builds 0-9 pandigital numbers with divisibility pruning. |
+| 44 | Pentagon Numbers | solved | Searches pentagonal pairs with pentagonal sum and difference. |
+| 45 | Triangular, Pentagonal, and Hexagonal | solved | Scans hexagonal numbers and tests pentagonal membership. |
+| 46 | Goldbach's Other Conjecture | solved | Tests odd composites against prime plus twice-square forms. |
+| 47 | Distinct Primes Factors | solved | Uses a distinct-prime-factor count sieve. |
+| 48 | Self Powers | solved | Computes the modular sum of self powers. |
+| 49 | Prime Permutations | solved | Groups four-digit primes by digit signature. |
+| 50 | Consecutive Prime Sum | solved | Uses prime prefix sums below one million. |
