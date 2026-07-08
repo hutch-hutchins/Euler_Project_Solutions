@@ -80,3 +80,13 @@ Problem modules should load fixed inputs with `include_str!()` so `cargo test` a
 | 28 | Number Spiral Diagonals | solved | Applies the corner-sum formula for each layer. |
 | 29 | Distinct Powers | solved | Uses decimal-vector powers stored as strings. |
 | 30 | Digit Fifth Powers | solved | Scans to the digit-power upper bound. |
+| 31 | Coin Sums | solved | Dynamic programming over UK coin denominations. |
+| 32 | Pandigital Products | solved | Finds 1-9 pandigital identities and deduplicates products. |
+| 33 | Digit Cancelling Fractions | solved | Brute-forces two-digit fractions and reduces the product. |
+| 34 | Digit Factorials | solved | Precomputes digit factorials and scans to a bounded limit. |
+| 35 | Circular Primes | solved | Uses a sieve plus decimal rotations. |
+| 36 | Double-base Palindromes | solved | Reuses base-aware palindrome checks. |
+| 37 | Truncatable Primes | solved | Tests prime status after left and right truncations. |
+| 38 | Pandigital Multiples | solved | Searches concatenated products for 1-9 pandigital values. |
+| 39 | Integer Right Triangles | solved | Counts Pythagorean triples by perimeter. |
+| 40 | Champernowne's Constant | solved | Computes requested sequence digits by index. |
