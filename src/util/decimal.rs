@@ -12,6 +12,26 @@ pub fn from_u64(mut n: u64) -> Vec<u8> {
     digits
 }
 
+pub fn add(lhs: &[u8], rhs: &[u8]) -> Vec<u8> {
+    let max_len = lhs.len().max(rhs.len());
+    let mut result = Vec::with_capacity(max_len + 1);
+    let mut carry = 0_u8;
+
+    for index in 0..max_len {
+        let left = lhs.get(index).copied().unwrap_or(0);
+        let right = rhs.get(index).copied().unwrap_or(0);
+        let value = left + right + carry;
+        result.push(value % 10);
+        carry = value / 10;
+    }
+
+    if carry > 0 {
+        result.push(carry);
+    }
+
+    result
+}
+
 pub fn add_assign_str(digits: &mut Vec<u8>, decimal: &str) {
     let mut carry = 0_u8;
 
@@ -95,6 +115,11 @@ mod tests {
         add_assign_str(&mut digits, "999");
         add_assign_str(&mut digits, "1");
         assert_eq!(to_string(&digits), "1000");
+    }
+
+    #[test]
+    fn add_decimal_vectors() {
+        assert_eq!(to_string(&add(&from_u64(999), &from_u64(1))), "1000");
     }
 
     #[test]

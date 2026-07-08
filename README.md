@@ -70,3 +70,13 @@ Problem modules should load fixed inputs with `include_str!()` so `cargo test` a
 | 18 | Maximum Path Sum I | solved | Bottom-up dynamic programming over the triangle. |
 | 19 | Counting Sundays | solved | Simulates month starts using Gregorian leap-year rules. |
 | 20 | Factorial Digit Sum | solved | Reuses decimal-vector multiplication. |
+| 21 | Amicable Numbers | solved | Uses sieved proper-divisor sums. |
+| 22 | Names Scores | solved | Uses `data/p0022_names.txt` and alphabetical scoring. |
+| 23 | Non-Abundant Sums | solved | Marks sums of abundant-number pairs. |
+| 24 | Lexicographic Permutations | solved | Uses factorial block selection. |
+| 25 | 1000-Digit Fibonacci Number | solved | Reuses decimal-vector addition. |
+| 26 | Reciprocal Cycles | solved | Tracks first-seen remainders during long division. |
+| 27 | Quadratic Primes | solved | Searches coefficient pairs by prime streak length. |
+| 28 | Number Spiral Diagonals | solved | Applies the corner-sum formula for each layer. |
+| 29 | Distinct Powers | solved | Uses decimal-vector powers stored as strings. |
+| 30 | Digit Fifth Powers | solved | Scans to the digit-power upper bound. |
