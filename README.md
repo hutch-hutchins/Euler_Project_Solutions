@@ -100,3 +100,13 @@ Problem modules should load fixed inputs with `include_str!()` so `cargo test` a
 | 48 | Self Powers | solved | Computes the modular sum of self powers. |
 | 49 | Prime Permutations | solved | Groups four-digit primes by digit signature. |
 | 50 | Consecutive Prime Sum | solved | Uses prime prefix sums below one million. |
+| 51 | Prime Digit Replacements | solved | Searches repeated-digit masks across primes. |
+| 52 | Permuted Multiples | solved | Compares digit signatures for multiples two through six. |
+| 53 | Combinatoric Selections | solved | Counts binomial coefficients above one million. |
+| 54 | Poker Hands | solved | Uses `data/p0054_poker.txt` and a local hand evaluator. |
+| 55 | Lychrel Numbers | solved | Uses decimal reverse-add iteration. |
+| 56 | Powerful Digit Sum | solved | Reuses decimal-vector multiplication. |
+| 57 | Square Root Convergents | solved | Tracks big numerator and denominator decimal vectors. |
+| 58 | Spiral Primes | solved | Tests spiral corners until the prime ratio drops below ten percent. |
+| 59 | XOR Decryption | solved | Uses `data/p0059_cipher.txt` and scores three-letter lowercase keys. |
+| 60 | Prime Pair Sets | solved | Backtracks over compatible concatenating-prime sets. |

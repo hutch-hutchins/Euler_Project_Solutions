@@ -48,10 +48,21 @@ pub mod p0047;
 pub mod p0048;
 pub mod p0049;
 pub mod p0050;
+pub mod p0051;
+pub mod p0052;
+pub mod p0053;
+pub mod p0054;
+pub mod p0055;
+pub mod p0056;
+pub mod p0057;
+pub mod p0058;
+pub mod p0059;
+pub mod p0060;
 
 const SOLVED_PROBLEMS: &[u32] = &[
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
     27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+    51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
 ];
 
 pub fn solved_problem_ids() -> &'static [u32] {
@@ -110,6 +121,16 @@ pub fn solve(id: u32) -> Option<String> {
         48 => Some(p0048::solve()),
         49 => Some(p0049::solve()),
         50 => Some(p0050::solve()),
+        51 => Some(p0051::solve()),
+        52 => Some(p0052::solve()),
+        53 => Some(p0053::solve()),
+        54 => Some(p0054::solve()),
+        55 => Some(p0055::solve()),
+        56 => Some(p0056::solve()),
+        57 => Some(p0057::solve()),
+        58 => Some(p0058::solve()),
+        59 => Some(p0059::solve()),
+        60 => Some(p0060::solve()),
         _ => None,
     }
 }
